@@ -227,7 +227,7 @@ PlayState._handleInput = function() {
     else {
         this.hero.move(0);
     }
-    const JUMP_HOLD = 200;
+    const JUMP_HOLD = 250;
     if (this.keys.up.downDuration(JUMP_HOLD)) {
         let didJump = this.hero.jump();
         if (didJump) { this.sfx.jump.play(); }
